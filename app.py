@@ -77,7 +77,7 @@ st.markdown("---")
 col_chart1, col_chart2 = st.columns(2)
 
 with col_chart1:
-    st.subheader("월별 매출 트렌드 (BRL)")
+    st.subheader("월별 매출 추이 (BRL)")
     trend_df = filtered_df.groupby('YearMonth')['price'].sum().reset_index()
     fig_trend = px.line(trend_df, x='YearMonth', y='price', markers=True, 
                         line_shape='spline', color_discrete_sequence=['#1f77b4'])
