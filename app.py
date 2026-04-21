@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # 1. 대시보드 기본 설정
-st.set_page_config(page_title="브라질 Olist 이커머스 대시보드", layout="wide")
+st.set_page_config(page_title="브라질 이커머스 대시보드", layout="wide")
 
 # 고정 환율 설정 (1 BRL = 260 KRW)
 EXCHANGE_RATE = 260
